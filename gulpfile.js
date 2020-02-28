@@ -32,9 +32,15 @@ gulp.task('code', function() {
   .pipe(browserSync.reload({ stream: true }))
 });
 
+gulp.task('js', function() {
+  return gulp.src('./js/*.js')
+  .pipe(browserSync.reload({ stream: true }))
+});
+
 gulp.task('watch', function () {
   gulp.watch('./sass/**/*.scss', gulp.parallel('sass'));
-  gulp.watch('./*.html', gulp.parallel('code')); 
+  gulp.watch('./*.html', gulp.parallel('code'));
+  gulp.watch('./js/*.js', gulp.parallel('js'));
 });
 
 gulp.task('default', gulp.parallel('sass', 'browser-sync', 'watch'));

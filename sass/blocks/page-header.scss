@@ -7,7 +7,7 @@
   justify-content: space-between;
   align-items: center;
   width: 940px;
-  height: 110px;
+  min-height: 110px;
   padding: 0 10px;
   margin: 0 auto;
 }
@@ -18,8 +18,31 @@
 }
 
 @media (max-width:1200px) {
+  .page-header--blue {
+    background-color: #283645;
+  }
   .page-header__wrapper {
     width: 620px;
+    height: auto;
     padding: 0;
+  }
+
+  .page-header__logo {
+    position: absolute;
+    top: 27px;
+    z-index: 1;
+  }  
+}
+
+@media (max-width:660px) {
+  .page-header {
+    min-width: 320px;
+  }
+  .page-header__wrapper {
+    width: 280px;
+  }
+
+  .page-header__logo {
+    top: 44px;
   }
 }
