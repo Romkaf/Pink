@@ -1,0 +1,199 @@
+.intro {
+  position: relative;
+  z-index: -1;
+  min-height: 741px;
+  margin-top: -110px;
+  padding-top: 110px;
+  background-image: url(/img/back-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center 0;
+}
+
+.intro__container {
+  display: flex;
+  max-width: 940px;
+  min-height: 741px;
+  padding: 0 10px;
+  margin: 0 auto;
+  background-image: url(/img/iphone-screen.png),
+                    url(/img/iphone-6.png);
+  background-repeat: no-repeat,
+  no-repeat;
+  background-size: auto, auto;
+  background-position: 81.31% 160px, -26.2% bottom;
+}
+
+.intro__downloading {
+  margin-top: 110px;
+  width: 300px;
+  text-align: center;
+}
+
+.intro__slogan {
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 60px;
+  text-transform: none;
+}
+
+.intro__download {
+  display: block;
+  padding: 15px 0;  
+  margin-top: 55px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 18px;
+  border: 3px solid #ffffff;
+  border-radius: 25px;
+
+  &:hover {
+    color: $pink;
+    background-color: #ffffff;
+  }
+
+  &:active {
+    color: rgba($pink, 0.3);
+  }
+}
+
+.intro__icons {
+  list-style: none;
+  margin-top: 65px;
+}
+
+.intro__icon {
+  display: inline-block;
+  width: 50px;
+  height: 60px;
+  margin-right: 30px;
+  background-position: center;
+}
+
+.intro__icon--apple {
+  background-image: url(/img/apple-logo.png);
+  background-repeat: no-repeat;
+}
+
+.intro__icon--android {
+  background-image: url(/img/android-logo.png);
+  background-repeat: no-repeat;
+}
+
+.intro__icon--microsoft {
+  background-image: url(/img/microsoft-logo.png);
+  background-repeat: no-repeat;
+}
+
+.intro__text {
+  margin-top: 51px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+@media (max-width:$tablet-width) {
+  .intro {
+    min-height: 620px;
+    background-image: url(/img/back-tablet@1x.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center 0;
+  }
+
+  .intro__container {
+    max-width: 620px;
+    min-height: 620px;
+    padding: 0 20px;
+    margin: 0 auto;
+    background-image: url(/img/iphone-tablet-screen.png),
+                      url(/img/iphone-6-tablet.png);
+    background-repeat: no-repeat,
+    no-repeat;
+    background-size: auto, auto;
+    background-position: 79.9% 129px, 1% bottom;
+  }
+
+  .intro__downloading {
+    margin-top: 95px;
+  }
+
+  .intro__slogan {
+    font-size: 40px;
+    line-height: 47px;
+  }
+
+  .intro__download { 
+    margin-top: 33px;
+    font-size: 18px;
+  }
+
+  .intro__icons {
+    margin-top: 45px;
+  }
+
+  .intro__text {
+    margin-top: 31px;
+  }
+}
+
+@media (max-width:$mobile-width) {
+  .intro {
+    position: relative;
+    z-index: -1;
+    min-height: 667px;
+    margin-top: -66px;
+    padding-top: 66px;
+    background-color: #1d2631;
+    background-image: url(/img/back-mobile@1x.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 463px;
+    background-position: center 0;
+  }
+
+  .intro__container {
+    position: relative;
+    max-width: 280px;
+    min-height: 396px;
+    background-image: url(/img/iphone-mobile-screen.png),
+                      url(/img/iphone-5-in-hand-png.png);
+    background-repeat: no-repeat,
+    no-repeat;
+    background-size: auto, auto;
+    background-position: 49.9% 114px, -26.2% bottom;
+  }
+
+  .intro__downloading {
+    position: absolute;
+    top: 396px;
+    right: 50%;
+    transform: translateX(50%);
+    margin: 0;
+    background-color: #1d2631;
+  }
+
+  .intro__slogan {
+    display: none;
+  }
+
+  .intro__download { 
+    width: 274px;
+    margin: 0 auto;
+    margin-top: 27px;
+  }
+
+  .intro__icons {
+    width: 280px;
+    margin: 0 auto;
+    margin-top: 28px;
+  }
+  
+  .intro__text {
+    width: 280px;
+    font-size: 14px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 32px;
+  }
+}

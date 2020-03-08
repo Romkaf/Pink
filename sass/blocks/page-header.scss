@@ -17,7 +17,25 @@
   margin-bottom: 10px;
 }
 
-@media (max-width:1200px) {
+.page-header__logo-icon {
+  fill: #ffffff;
+
+  .logo-tablet,
+  .logo-mobile {
+    display: none;
+  }
+
+  &:hover .logo-desktop {
+    fill:$pink;
+  }
+
+  &:active .logo-desktop {
+    fill: #ffffff;
+    fill-opacity: 0.3;
+  }
+}
+
+@media (max-width:$tablet-width) {
   .page-header--blue {
     background-color: #283645;
   }
@@ -32,17 +50,55 @@
     top: 27px;
     z-index: 1;
   }  
+
+  .page-header__logo-icon {
+    .logo-tablet {
+      display: inline-block;
+    }
+    .logo-desktop,
+    .logo-mobile {
+      display: none;
+    }
+
+    &:hover .logo-tablet {
+      fill:$pink;
+    }
+  
+    &:active .logo-tablet {
+      fill-opacity: 0.3;
+    }
+  }
 }
 
-@media (max-width:660px) {
+@media (max-width:$mobile-width) {
   .page-header {
     min-width: 320px;
   }
   .page-header__wrapper {
     width: 280px;
+    min-height: 66px;
   }
 
   .page-header__logo {
-    top: 44px;
+    top: 22px;
+  }
+
+  .page-header__logo-icon {
+    .logo-mobile {
+      display: inline-block;
+    }
+
+    .logo-desktop,
+    .logo-tablet {
+      display: none;
+    }
+
+    &:hover .logo-mobile {
+      fill:$pink;
+    }
+  
+    &:active .logo-mobile {
+      fill-opacity: 0.3;
+    }
   }
 }

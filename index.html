@@ -10,11 +10,11 @@
   <header class="page-header">
     <div class="page-header__wrapper">
       <a href="" class="page-header__logo">
-        <picture>
-          <source media="(min-width: 1200px)" srcset="/img/logotype-white-desktop.png">
-          <source media="(min-width: 660px)" srcset="/img/logotype-white-tablet.png">
-          <img class="page-header__logo-icon" src="/img/logotype-white-mobile.png" alt="Логотип Pink">
-        </picture>
+        <svg class="page-header__logo-icon" width="146.3px" height="40.4px">
+          <use class="logo-desktop" xlink:href="/img/sprite.svg#logo-desktop"></use>
+          <use class="logo-tablet" xlink:href="/img/sprite.svg#logo-tablet"></use>
+          <use class="logo-mobile" xlink:href="/img/sprite.svg#logo-mobile"></use>
+        </svg>
       </a>
       <nav class="page-header__nav main-nav main-nav--closed">
         <button class="main-nav__toggle" type="button">
@@ -37,8 +37,55 @@
       </nav>
     </div>
   </header>
-  <section style="height: 300px; background-color: blueviolet;">
-  </section>
+  <main class="page-main">
+    <h1 class="visually-hidden">Приложение "Pink"</h1>
+    <section class="intro">
+      <div class="intro__container">
+        <div class="intro__downloading">
+          <b class="intro__slogan">Взгляните<br> на жизнь<br> иначе!</b>
+          <a href="" class="intro__download">Скачать приложение</a>
+          <ul class="intro__icons">
+            <li class="intro__icon intro__icon--apple"></li>
+            <li class="intro__icon intro__icon--android"></li>
+            <li class="intro__icon intro__icon--microsoft"></li>
+          </ul>
+          <p class="intro__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
+      </div>
+    </section>
+    <section class="features">
+      <div class="features__container">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <b class="features__proposition">Устали от серости мегаполиса?
+          <b class="features__proposition-2"> Нам есть, что вам<br>
+          предложить!</b></b>
+        <ul class="features__list">
+          <li class="features__item features__item--first">
+            <div class="features__wrapper-item">
+              <h3 class="features__heading">Поднимает настроение
+              </h3>
+              <p class="features__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </div>    
+          </li>
+          <li class="features__item features__item--second">
+            <div class="features__wrapper-item">
+              <h3 class="features__heading">Меняет мир вокруг
+              </h3>
+              <p class="features__description">
+                Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </div> 
+          </li>
+          <li class="features__item features__item--third">
+            <div class="features__wrapper-item">
+              <h3 class="features__heading">Заводит 
+                новых друзей</h3>
+              <p class="features__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </div>    
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
   <script src="/js/menuToggle.js"></script>
 </body>
 </html>

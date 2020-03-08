@@ -41,7 +41,7 @@
   text-decoration: none;
 
   &[href]:hover {
-    color: #bb2a54;
+    color: $pink;
   }
 
   &[href]:active {
@@ -50,7 +50,7 @@
   }
 }
 
-@media (max-width:1200px) {
+@media (max-width:$tablet-width) {
   .main-nav {
     position: relative;
     flex-direction: column;
@@ -61,11 +61,12 @@
   .main-nav__toggle {
     display: block;
     position: absolute;
-    top: 45px;
+    top: 44px;
     right: 0;
     width: 50px;
     height: 26px;
     cursor: pointer;
+    outline: none;
     background: none;
     border: none;
   }
@@ -83,16 +84,18 @@
   }
 
   .main-nav--closed .main-nav__toggle {
-    &:hover::before {
-      background-color: #d22856;
-      box-shadow: 0 10px 0 0 #d22856,
-                  0 20px 0 0 #d22856;
+    @include hoverSupport {
+      &::before {
+        background-color: $pink;
+        box-shadow: 0 10px 0 0 $pink,
+                    0 20px 0 0 $pink;
+      }
     }
 
     &:active::before {
-      background-color: #d22856;
-      box-shadow: 0 10px 0 0 #d22856,
-                  0 20px 0 0 #d22856;
+      background-color: $pink;
+      box-shadow: 0 10px 0 0 $pink,
+                  0 20px 0 0 $pink;
       opacity: 0.3;
     }
   }
@@ -117,14 +120,16 @@
   }
 
   .main-nav--opened .main-nav__toggle {
-    &:hover::before,
-    &:hover::after {
-      background-color: #d22856;
+    @include hoverSupport {
+      &::before,
+      &::after {
+        background-color: $pink;
+      }
     }
 
     &:active::before,
     &:active::after {
-      background-color: #d22856;
+      background-color: $pink;
       opacity: 0.3;
     }
   }
@@ -178,11 +183,21 @@
     background-color: #283645;
     border-top: 1px solid #485461;
     border-bottom: 1px solid #000;
+
+    &[href]:active {
+      color: $pink;
+    }
   }
 }
 
-@media (max-width:660px) {
+@include media-mobile {
   .main-nav__list {
     width: auto;
+    margin-top: 66px;
+    color: #000;
+  }
+
+  .main-nav__toggle {
+    top: 22px;
   }
 }

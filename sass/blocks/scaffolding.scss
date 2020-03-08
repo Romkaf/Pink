@@ -22,6 +22,13 @@
   url(/fonts/OpenSans-Bold.woff) format('woff');
 }
 
+html,
+body,
+.page-main {
+  position: relative;
+  z-index: -1;
+}
+
 body {
   min-width: 320px;
   margin: 0;
