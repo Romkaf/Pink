@@ -22,6 +22,21 @@
   url(/fonts/OpenSans-Bold.woff) format('woff');
 }
 
+@keyframes fade {
+  from {opacity: 0.4;}
+  to {opacity: 1;}
+}
+
+@keyframes translate-left {
+  from {transform: translateX(40%);}
+  to {transform: translateX(0);}
+}
+
+@keyframes translate-right {
+  from {transform: translateX(-40%);}
+  to {transform: translateX(0);}
+}
+
 html,
 body,
 .page-main {

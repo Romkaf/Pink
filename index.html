@@ -85,7 +85,31 @@
         </ul>
       </div>
     </section>
+    <section class="reviews">
+      <div class="reviews__container">
+        <div class="reviews__block">
+          <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          <b class="reviews__author">Николай Петров</b><span class="reviews__author-data">25 лет, водитель трамвая</span>
+        </div>
+        <div class="reviews__block">
+          <p class="reviews__text">«Это приложение сделало меня сильнее»</p>
+          <b class="reviews__author">Василий Редисов</b><span class="reviews__author-data">67,пенсионер</span>
+        </div>
+        <div class="reviews__block">
+          <p class="reviews__text">«Это приложение свело меня с ума»</p>
+          <b class="reviews__author">Валерий Быстров</b><span class="reviews__author-data">36 лет, тракторист</span>
+        </div>
+        <buttton type="button" class="reviews__prev" onclick="plusReview(-1)"></buttton>
+        <button type="button" class="reviews__next" onclick="plusReview(1)"></button>
+        <p class="reviews__toggles">
+          <button type="button" class="reviews__toggle" onclick="currentReview(1)"></button>
+          <button type="button" class="reviews__toggle" onclick="currentReview(2)"></button>
+          <button type="button" class="reviews__toggle" onclick="currentReview(3)"></button>
+        </p>
+      </div>
+    </section>
   </main>
   <script src="/js/menuToggle.js"></script>
+  <script src="/js/slider.js"></script>
 </body>
 </html>
