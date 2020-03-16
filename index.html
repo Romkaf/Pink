@@ -4,16 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pink Main page</title>
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
   <header class="page-header">
     <div class="page-header__wrapper">
       <a href="" class="page-header__logo">
         <svg class="page-header__logo-icon" width="146.3px" height="40.4px">
-          <use class="logo-desktop" xlink:href="/img/sprite.svg#logo-desktop"></use>
-          <use class="logo-tablet" xlink:href="/img/sprite.svg#logo-tablet"></use>
-          <use class="logo-mobile" xlink:href="/img/sprite.svg#logo-mobile"></use>
+          <use class="logo-desktop" xlink:href="./img/sprite.svg#logo-desktop"></use>
+          <use class="logo-tablet" xlink:href="./img/sprite.svg#logo-tablet"></use>
+          <use class="logo-mobile" xlink:href="./img/sprite.svg#logo-mobile"></use>
         </svg>
       </a>
       <nav class="page-header__nav main-nav main-nav--closed">
@@ -99,7 +99,7 @@
           <p class="reviews__text">«Это приложение свело меня с ума»</p>
           <b class="reviews__author">Валерий Быстров</b><span class="reviews__author-data">36 лет, тракторист</span>
         </div>
-        <buttton type="button" class="reviews__prev" onclick="plusReview(-1)"></buttton>
+        <button type="button" class="reviews__prev" onclick="plusReview(-1)"></buttton>
         <button type="button" class="reviews__next" onclick="plusReview(1)"></button>
         <p class="reviews__toggles">
           <button type="button" class="reviews__toggle" onclick="currentReview(1)"></button>
@@ -108,8 +108,73 @@
         </p>
       </div>
     </section>
+    <section class="contacts">
+      <div class="contacts__wrapper">
+        <div class="contacts__container">
+          <h2 class="visually-hidden">Контакты</h2>
+          <b class="contacts__heading">Остались вопросы?<br> Свяжитесь с нами!</b>
+          <ul class="contacts__information contacts-list">
+            <li class="contacts-list__item">Звоните:
+              <span class="contacts-list__item-info">+7 (812) 555-66-66</span>
+            </li>
+            <li class="contacts-list__item">Приезжайте в гости
+              <span class="contacts-list__item-info">ул. Большая 
+              Конюшенная, 19/8</span>
+            </li>
+            <li class="contacts-list__item">Пишите:
+              <span class="contacts-list__item-info">mail@htmlacademy.ru</span>
+            </li>
+          </ul>
+        </div>
+        <div class="triangle"></div>
+      </div>
+      <iframe class="contacts__map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6060545949795!2d30.320890902592556!3d59.93867886138578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1584033990493!5m2!1sru!2sru" width="600" height="400" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      <p class="contacts__map">
+        <picture>
+          <source media="(min-width:1200px)" srcset="./img/map-desktop.jpg">
+          <source media="(min-width:660px)" srcset="./img/map-tablet.jpg">
+          <img class="contacts__map-image" src="./img/map-mobile.jpg" alt="Карта офиса компании">
+        </picture>
+      </p>
   </main>
-  <script src="/js/menuToggle.js"></script>
-  <script src="/js/slider.js"></script>
+  <footer class="page-footer">
+    <div class="page-footer__container">
+      <div class="pade-footer__logo logo">
+        <a class="logo__link">
+          <svg class="logo__icon" width="146.3px" height="40.4px">
+            <use class="logo__icon-desktop" xlink:href="./img/sprite.svg#logo-desktop-footer">
+            </use>
+            <use class="logo__icon-tablet" xlink:href="./img/sprite.svg#logo-tablet-mobile-footer">
+            </use>
+          </svg>
+        </a>
+      </div>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="#" class="social__link social__link--twitter">
+               Мы в Твиттере
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--facebook">
+               Мы в Фейсбуке
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--youtube">
+              Мы в Ютюбе
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="./img/htmlacademy.png" alt="HTML Academy"> </a>
+      </div>
+    </div>
+  </footer>
+  <script src="./js/menuToggle.js"></script>
+  <script src="./js/slider.js"></script>
 </body>
 </html>

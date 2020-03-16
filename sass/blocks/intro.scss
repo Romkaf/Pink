@@ -4,7 +4,7 @@
   min-height: 741px;
   margin-top: -110px;
   padding-top: 110px;
-  background-image: url(/img/back-desktop.jpg);
+  background-image: url(../img/back-desktop.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center 0;
@@ -16,8 +16,8 @@
   min-height: 741px;
   padding: 0 10px;
   margin: 0 auto;
-  background-image: url(/img/iphone-screen.png),
-                    url(/img/iphone-6.png);
+  background-image: url(../img/iphone-screen.png),
+                    url(../img/iphone-6.png);
   background-repeat: no-repeat,
   no-repeat;
   background-size: auto, auto;
@@ -73,17 +73,17 @@
 }
 
 .intro__icon--apple {
-  background-image: url(/img/apple-logo.png);
+  background-image: url(../img/apple-logo.png);
   background-repeat: no-repeat;
 }
 
 .intro__icon--android {
-  background-image: url(/img/android-logo.png);
+  background-image: url(../img/android-logo.png);
   background-repeat: no-repeat;
 }
 
 .intro__icon--microsoft {
-  background-image: url(/img/microsoft-logo.png);
+  background-image: url(../img/microsoft-logo.png);
   background-repeat: no-repeat;
 }
 
@@ -96,7 +96,7 @@
 @media (max-width:$tablet-width) {
   .intro {
     min-height: 620px;
-    background-image: url(/img/back-tablet@1x.jpg);
+    background-image: url(../img/back-tablet@1x.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center 0;
@@ -107,8 +107,8 @@
     min-height: 620px;
     padding: 0 20px;
     margin: 0 auto;
-    background-image: url(/img/iphone-tablet-screen.png),
-                      url(/img/iphone-6-tablet.png);
+    background-image: url(../img/iphone-tablet-screen.png),
+                      url(../img/iphone-6-tablet.png);
     background-repeat: no-repeat,
     no-repeat;
     background-size: auto, auto;
@@ -146,7 +146,7 @@
     margin-top: -66px;
     padding-top: 66px;
     background-color: #1d2631;
-    background-image: url(/img/back-mobile@1x.jpg);
+    background-image: url(../img/back-mobile@1x.jpg);
     background-repeat: no-repeat;
     background-size: 100% 463px;
     background-position: center 0;
@@ -156,8 +156,8 @@
     position: relative;
     max-width: 280px;
     min-height: 396px;
-    background-image: url(/img/iphone-mobile-screen.png),
-                      url(/img/iphone-5-in-hand-png.png);
+    background-image: url(../img/iphone-mobile-screen.png),
+                      url(../img/iphone-5-in-hand-png.png);
     background-repeat: no-repeat,
     no-repeat;
     background-size: auto, auto;

@@ -23,7 +23,7 @@
   padding: 0 10px;
   padding-bottom: 85px;
   margin: 0 auto;  
-  background: url(/img/quotes.png) no-repeat;
+  background: url(../img/quotes.png) no-repeat;
   background-position: center 20%;
 }
 
@@ -61,7 +61,9 @@
   border: none;
   width: 50px;
   height: 46px;
+  background: none;
   cursor: pointer;
+  outline: none;
 
   &::before,
   &::after {
@@ -86,7 +88,9 @@
 }
 
 .reviews__prev:hover::before,
-.reviews__prev:hover::after {
+.reviews__prev:hover::after,
+.reviews__prev:focus::before,
+.reviews__prev:focus::after {
   background-color: #7e868f;
 }
 
@@ -129,7 +133,9 @@
 }
 
 .reviews__next:hover::before,
-.reviews__next:hover::after {
+.reviews__next:hover::after,
+.reviews__next:focus::before,
+.reviews__next:focus::after {
   background-color: #7e868f;
 }
 

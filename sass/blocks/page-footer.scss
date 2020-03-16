@@ -1,0 +1,161 @@
+.page-footer {
+  background-color: #fff;
+  margin-top: -197px;
+
+}
+
+.page-footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 197px;
+  width: 940px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+.logo__link {
+  display: inline-block;
+
+  @include hoverSupport {
+    .logo__icon-desktop,
+    .logo__icon-tablet {
+      fill: $pink;
+    }
+  }
+
+  &:active .logo__icon-desktop,
+  &:active .logo__icon-tablet {
+    opacity: 0.3;
+  }
+}
+
+.logo__icon {
+  fill: #283645;
+}
+
+.logo__icon-tablet {
+  display: none;
+}
+
+.social {
+  width: 180px;
+}
+
+.social__list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social__link {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 52px;
+  height: 52px;
+  border: 4px solid #f8f8f9;
+  border-radius: 50%;
+  font-size: 0;
+
+  @include hoverSupport {
+    border-color: $blue;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+}
+
+.social__link--twitter {
+  background: url(../img/twitter.png) no-repeat center;
+}
+
+.social__link--facebook {
+  background: url(../img/facebook.png) no-repeat center;
+}
+
+.social__link--youtube {
+  background: url(../img/youtube.png) no-repeat center;
+}
+
+.copyright {
+  width: 150px;
+  margin-top: 15px;
+}
+
+.copyright__text {
+  font-weight: 400;
+  line-height: 18px;
+  color: $blue;
+  vertical-align: top;
+}
+
+.copyright__link {
+  display: inline-block;
+  margin-left: 5px;
+  margin-top: -2px;
+}
+
+@media (max-width:$tablet-width) {
+  .page-footer {
+    margin-top: -127px;
+  }
+  
+  .page-footer__container {
+    min-height: 127px;
+    width: 620px;
+    padding: 0 20px;
+  }
+
+  .logo__icon-desktop {
+    display: none;
+  }
+  
+  .logo__icon-tablet {
+    display: block;
+  }
+
+  .copyright__text {
+    font-size: 14px;
+  }
+
+  .copyright__link {
+    margin-top: -5px;
+  }
+}
+
+@media (max-width:$mobile-width) {
+  .page-footer {
+    margin-top: -3px;
+  }
+
+  .page-footer__container {
+    flex-direction: column;
+    width: 280px;
+  }
+
+  .pade-footer__logo {
+    margin: 40px 0;
+  }
+
+  .page-footer__social {
+    margin-bottom: 40px;
+  }
+
+  .page-footer__copyright {
+    margin: 0;
+    margin-bottom: 40px;
+    padding-left: 20px;
+  }
+
+  .copyright__link {
+    margin-left: 9px;
+  }
+}
